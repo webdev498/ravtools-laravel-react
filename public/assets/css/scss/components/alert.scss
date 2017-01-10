@@ -1,0 +1,114 @@
+#alerts {
+	position: fixed;
+	left: 50%;
+	bottom: $ms-gap;
+	width: 300px;
+	margin-left: -150px;
+	z-index: 2000;
+
+	.alert {
+		position: relative;
+		width: 300px;
+		margin-bottom: 0px;
+		transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+
+		& > p strong {
+			display: block;
+			line-height: 15px;
+			margin-bottom: 5px;
+		}
+
+		.alert-control {
+			display: block;
+			float: right;
+			height: 15px;
+			width: 15px;
+			text-align: center;
+			line-height: 13px;
+			font-size: 13px;
+
+			.spinner {
+				display: block;
+				animation: anim-spinner linear 1s infinite;
+				-webkit-animation: anim-spinner linear 1s infinite;
+			}
+
+			.btn {
+				font-size: 2rem;
+				line-height: 15px;
+				border: none;
+				box-shadow: none;
+				height: 15px;
+				width: 15px;
+				min-width: 15px;
+				background: transparent;
+				transition: all 0.2s ease-in-out;
+				-webkit-transition: all 0.2s ease-in-out;
+			}
+		}
+
+		.alert-timer {
+			position: absolute;
+			display: block;
+			left: 0;
+			bottom: 0;
+			height: 5px;
+			width: 0%;
+			border-radius: 0px 0px 4px 4px;
+			animation: anim-timer linear 3s;
+			-webkit-animation: anim-timer linear 3s;
+		}
+
+		&.alert-success {
+			color: $color-green;
+			border-color: $color-green;
+			background-color: lighten($color-green, 45%);
+
+			.alert-timer {
+				background-color: $color-green;
+			}
+		}
+
+		&.alert-danger {
+			color: $color-red;
+			border-color: $color-red;
+			background-color: lighten($color-red, 45%);
+
+			.alert-timer {
+				background-color: $color-red;
+			}
+		}
+
+		&.alert-info {
+			color: $color-blue;
+			border-color: $color-blue;
+			background-color: lighten($color-blue, 45%);
+
+			.alert-timer {
+				background-color: $color-blue;
+			}
+		}
+	}
+}
+
+@keyframes anim-spinner {
+	from {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes anim-timer {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}

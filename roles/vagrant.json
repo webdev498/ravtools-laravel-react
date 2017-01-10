@@ -1,0 +1,60 @@
+{
+	"name": "vagrant",
+	"description": "vagrant development role",
+	"json_class": "Chef::Role",
+	"default_attributes": {
+		"raven_deploy": {
+			"attachments_dir": "/home/webapps/site_auditor/cache"
+		},
+		"standalone_site_auditor": {
+			"app_path": "/home/webapps/site_auditor",
+			"docroot": "/home/webapps/site_auditor/public"
+		},
+		"site_auditor_sync": {
+			"sync": {
+				"config_env": "vagrant",
+				"run": "true",
+				"user": "apache",
+				"log_level": "debug"
+			}
+		},
+		"site_auditor_grid": {
+			"config_env": "vagrant",
+			"crawler": {
+				"run": "true",
+				"user": "apache"
+			},
+			"processor": {
+				"run": "true",
+				"user": "apache"
+			},
+			"input": {
+				"run": "true"
+			},
+			"output": {
+				"run": "true"
+			}
+		}
+	},
+	"override_attributes": {},
+	"chef_type": "role",
+	"run_list": [
+		"raven-deploy::install_aws_credentials",
+		"raven-deploy::install_keys",
+		"raven-db::install_dynamodb",
+		"raven-dev",
+		"raven-dev::fake-sqs",
+		"raven-php",
+		"raven-redis",
+		"raven-nodejs",
+		"raven-nodejs::install_bower",
+		"site_auditor_sync",
+		"site_auditor_sync::deploy_tag",
+		"site_auditor_sync::setup_sync_dependencies",
+		"site_auditor_grid",
+		"site_auditor_grid::deploy_tag",
+		"standalone_site_auditor",
+		"standalone_site_auditor::vagrant"
+	],
+	"env_run_lists": {}
+}

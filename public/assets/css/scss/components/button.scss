@@ -1,0 +1,73 @@
+@mixin button-type($fg, $bg) {
+	color: $fg;
+	border: none;
+	box-shadow: 0px 0px 0px 1px $bg inset;
+	background-color: $bg;
+
+	&:hover {
+		box-shadow: 0px 0px 0px 1px darken($bg, 5%) inset;
+		background-color: hover($bg);
+	}
+
+	&:active {
+		box-shadow: 0px 0px 0px 1px darken($bg, 10%) inset;
+		background-color: active($bg);
+	}
+}
+
+.btn-toolbar {
+	margin-left: 0;
+}
+
+.btn-toolbar .btn {
+	margin-left: 0;
+	margin-right: ($ms-gap/2);
+}
+
+.float-right > .btn-toolbar .btn {
+	margin-left: ($ms-gap/2);
+	margin-right: 0;
+}
+
+.btn {
+	@include font-bold();
+	height: 34px;
+	line-height: 32px;
+	padding: 0px $ms-gap;
+	min-width: $ms-button-width;
+	font-size: 1.2rem;
+	text-align: center;
+	color: $color-button-default;
+	border: none;
+	box-shadow: 0px 0px 0px 1px $color-button-default inset;
+	background-color: $color-button-default-bg;
+
+	&:hover {
+		box-shadow: 0px 0px 0px 1px $color-button-default inset;
+		background-color: hover($color-button-default-bg);
+	}
+
+	&:active {
+		box-shadow: 0px 0px 0px 1px $color-button-default inset;
+		background-color: active($color-button-default-bg);
+	}
+
+	&.btn-primary {
+		@include button-type($color-button-primary, $color-button-primary-bg);
+	}
+
+	&.btn-danger {
+		@include button-type($color-button-danger, $color-button-danger-bg);
+	}
+}
+
+@include breakpoint-phone() {
+	.btn.btn-phone-wide {
+		display: block;
+		min-width: 100%;
+	}
+
+	.btn-toolbar .btn.btn-phone-wide {
+		margin: ($ms-gap/4) 0;
+	}
+}

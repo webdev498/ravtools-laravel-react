@@ -1,0 +1,6 @@
+{
+	"timezone": "US/Central",
+	"stripe": {
+		"secret_key": "sk_test_HxREyrq99deKkM1ExX7xtSfI"
+	}
+}

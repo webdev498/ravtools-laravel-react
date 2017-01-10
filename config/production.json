@@ -1,0 +1,13 @@
+{
+	"elasticsearch": [
+		{
+			"transport": "Http",
+			"host": "auditor-elasticsearchproxy.ravendns.in",
+			"port": 80,
+			"enabled": true
+		}
+	],
+	"stripe": {
+		"secret_key": "sk_live_2vWnVkhRxOIYZ7pKO3ITit0t"
+	}
+}

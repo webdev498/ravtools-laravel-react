@@ -1,0 +1,32 @@
+{
+	"name": "Standalone",
+	"version": "1.0.0",
+	"main": "/",
+
+	"dependencies": {
+		"backbone": "1.2.3",
+		"bootstrap": "3.3.5",
+		"datatables": "1.10.9",
+		"datatables-bootstrap3-plugin": "0.4.0",
+		"jquery": "1.11.3",
+		"jsx-requirejs-plugin": "0.6.2",
+		"q": "1.0.1",
+		"react": "0.13.3",
+		"requirejs-bower": "2.1.20",
+		"requirejs-text": "2.0.14",
+		"underscore": "1.8.3",
+		"moment": "2.10.6",
+		"auth0-lock": "9.1",
+		"progressbar.js": "1.0.0",
+		"clipboard": "1.5.9",
+		"validate.js": "0.9.0"
+	},
+
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}

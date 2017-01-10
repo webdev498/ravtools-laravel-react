@@ -1,0 +1,47 @@
+#analyze-modal {
+	h4 {
+		@include font-light();
+		text-transform: uppercase;
+	}
+
+	.column > .row {
+		text-align: center;
+		height: 200px;
+
+		p, label {
+			font-size: 1.25rem;
+		}
+	}
+
+	.analyze-manual-container {
+		padding: ($ms-gap * 4) 0px;
+	}
+
+	.analyze-frequency-container {
+		padding: ($ms-gap * 2) 0px;
+
+		.form-group {
+			margin-bottom: 12px;
+		}
+
+		.frequency-fields {
+			height: 60px;
+
+			p {
+				color: $color-font-light;
+				font-size: 1.3rem;
+			}
+
+			.icon {
+				color: $color-font-light;
+				font-size: 3rem;
+			}
+		}
+	}
+
+	.form-control {
+		display: inline-block;
+		width: auto;
+		margin-left: $ms-gap;
+	}
+}

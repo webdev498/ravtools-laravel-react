@@ -1,0 +1,16 @@
+[
+	{
+		"id": "7a8d3254-3523-471f-b70e-b845a29ff69b",
+		"stripe_customer_id": "123",
+		"reason": "Too many drop shadows.",
+		"signup_ts": 1456761571,
+		"cancel_ts": 1456846971
+	},
+	{
+		"id": "7a8d3254-3523-471f-b70e-b845a29ff69c",
+		"stripe_customer_id": "456",
+		"reason": "Too awesome. Need to hate myself more.",
+		"created_ts": 1456761571,
+		"updated_ts": 1456846971
+	}
+]

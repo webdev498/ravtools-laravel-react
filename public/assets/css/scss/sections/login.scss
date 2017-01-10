@@ -1,0 +1,35 @@
+#login-page {
+	margin-top: $ms-gap * 7;
+
+	h1 {
+		margin-top: 0;
+	}
+
+	#login-welcome {
+		text-align: center;
+	}
+}
+
+/* Alters Auth0 Lock */
+
+#a0-lock.a0-theme-default {
+	.a0-logo, .a0-spinner-bg {
+		display: none !important;
+	}
+
+	.a0-icon-container {
+		color: $color-font-top;
+		background-color: $color-top-bg;
+	}
+}
+
+@include breakpoint-phone {
+	#login-page {
+		margin-top: $ms-gap;
+	}
+
+	#a0-lock.a0-theme-default .a0-spin-container {
+		top: 50% !important;
+	}
+}
+

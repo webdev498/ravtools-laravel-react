@@ -1,0 +1,92 @@
+#account-pagetitle {
+
+}
+
+#account-page {
+	section h5 {
+		margin: 0;
+	}
+
+	#account-details .details-wrapper {
+		margin: 0 $ms-gap $ms-gap $ms-gap;
+		border: 2px solid $color-block-bg;
+		height: 150px;
+
+		.details-column {
+			padding: ($ms-gap*2) ($ms-gap*2);
+		}
+	}
+
+	#account-plans {
+		margin-bottom: ($ms-gap*2);
+	}
+}
+
+.account-plan {
+	height: 223px;
+
+	.heading {
+		@include font-medium();
+		font-size: 1.25rem;
+		margin-bottom: $ms-gap;
+	}
+
+	.details {
+		position: relative;
+		border: 2px solid $color-block-bg;
+		padding: $ms-gap;
+		height: 175px;
+
+		.top {
+			margin: 0 0 $ms-gap 0;
+			padding-bottom: ($ms-gap/2);
+			border-bottom: 2px solid $color-block-bg;
+			line-height: 1;
+		}
+
+		.price {
+			color: $color-font-interact;
+		}
+
+		.value {
+			font-size: 2.5rem;
+			margin-right: 5px;
+		}
+
+		.name {
+			font-size: 1.25rem;
+			color: $color-font-light;
+			text-transform: uppercase;
+		}
+
+		.btn-toolbar {
+			position: absolute;
+			bottom: -17px;
+			left: 0px;
+			width: 100%;
+
+			button {
+				display: block;
+				margin: 0 auto;
+				float: none;
+			}
+		}
+	}
+
+	&.active .details {
+		border-color: $color-font-interact;
+		box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+	}
+}
+
+@include breakpoint-tablet() {
+	#account-page {
+		#account-details .details-wrapper {
+			height: auto;
+
+			.details-column {
+				padding: $ms-gap;
+			}
+		}
+	}
+}

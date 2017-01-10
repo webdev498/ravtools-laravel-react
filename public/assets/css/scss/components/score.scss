@@ -1,0 +1,40 @@
+.score {
+	.score-label {
+		@include font-bold();
+		display: block;
+		margin-bottom: 5px;
+		font-size: 1rem;
+		text-align: center;
+		text-transform: uppercase;
+		color: $color-font-light;
+	}
+
+	.score-circle .progressbar-text {
+		line-height: 1;
+	}
+
+	.score-change {
+		font-size: 1.1rem;
+		margin-right: 5px;
+
+		.icon.change-up {
+			color: $color-green;
+		}
+
+		.icon.change-down {
+			color: $color-red;
+		}
+	}
+
+	.score-details {
+		@include font-italic();
+		font-size: 1.1rem;
+		color: $color-font-default;
+
+		.spinner {
+			display: inline-block;
+			margin-bottom: -4px;
+			margin-right: 5px;
+		}
+	}
+}

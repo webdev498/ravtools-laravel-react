@@ -1,0 +1,20 @@
+[
+	{
+		"id": "7a8d3254-3523-471f-b70e-b845a29ff69b",
+		"auth0_id": "123",
+		"name": "Steve Harvey",
+		"email": "steve@koc.com",
+		"status": 1,
+		"created_ts": 1456761571,
+		"updated_ts": 1456846971
+	},
+	{
+		"id": "7a8d3254-3523-471f-b70e-b845a29ff69c",
+		"auth0_id": "456",
+		"name": "D.L. Hughley",
+		"email": "dl@koc.com",
+		"status": 1,
+		"created_ts": 1456761571,
+		"updated_ts": 1456846971
+	}
+]

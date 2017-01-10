@@ -1,0 +1,25 @@
+.messages .message {
+	text-align: center;
+	padding: $ms-gap ($ms-gap * 2);
+	background-color: $color-block-bg;
+	border-top-width: 5px;
+	border-top-style: solid;
+
+	.btn-toolbar {
+		display: block;
+		float: none;
+
+		.btn {
+			float: none;
+			margin: 0;
+		}
+	}
+
+	&.success {
+		border-top-color: $color-green;
+	}
+
+	&.danger {
+		border-top-color: $color-red;
+	}
+}

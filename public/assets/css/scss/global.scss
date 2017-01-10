@@ -1,0 +1,87 @@
+html {
+	font-size: $font-size;
+}
+
+body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	@include font-regular;
+	font-size: 1.2rem;
+	color: $color-font-default;
+}
+
+body > noscript > .alert {
+	padding: $ms-gap * 2;
+	margin: $ms-gap;
+
+	h3 {
+		margin-top: 0;
+	}
+}
+
+#app-container {
+	position: relative;
+	min-height: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: $ms-bottom-height;
+
+	&.with-background {
+		background: $color-body-bg $image-body-bg left 0px bottom $ms-bottom-height no-repeat;
+	}
+}
+
+#main {
+	margin-bottom: ($ms-gap * 2);
+}
+
+h1 {
+	@include font-light;
+	font-size: 3.5rem;
+}
+
+h2 {
+	@include font-regular;
+	font-size: 3.25rem;
+}
+
+h3 {
+	@include font-regular;
+	font-size: 2rem;
+}
+
+h4 {
+	@include font-light;
+	font-size: 1.5rem;
+}
+
+h5 {
+	@include font-medium;
+	font-size: 1.25rem;
+}
+
+dd {
+	margin-bottom: ($ms-gap/2);
+}
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.dropdown-menu {
+	padding: 0;
+}
+
+@include breakpoint-phone {
+	#app-container.with-background {
+		background: none;
+	}
+}

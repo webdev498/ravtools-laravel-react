@@ -1,0 +1,17 @@
+[
+	{
+		"id": "f3e49d81-15c6-46be-b582-397e60b11afc",
+		"site_id": "7a8d3254-3523-471f-b70e-b845a29ff69b",
+		"path": "/admin/"
+	},
+	{
+		"id": "029b441f-fc8a-47be-8d26-5f0fd444c392",
+		"site_id": "7a8d3254-3523-471f-b70e-b845a29ff69b",
+		"path": "/search/"
+	},
+	{
+		"id": "1f913260-6784-49d6-a9a9-93a24d5226d9",
+		"site_id": "7a8d3254-3523-471f-b70e-b845a29ff69b",
+		"path": "/members/"
+	}
+]

@@ -1,0 +1,159 @@
+#sites-page {
+	.no-sites {
+		margin-top: ($ms-gap*2);
+		text-align: center;
+	}
+
+	.site-grid {
+		padding: 0px;
+	}
+
+	.site-box {
+		display: block;
+		position: relative;
+		float: left;
+		height: 350px;
+		width: 300px;
+		padding: ($ms-gap*2) $ms-gap;
+		margin: 0px $ms-gap ($ms-gap*2) $ms-gap;
+		background-color: $color-block-bg;
+		box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+		text-align: center;
+
+		&.ghost, &.pending {
+			opacity: 0.5;
+		}
+
+		.site-box-cog {
+			display: block;
+			position: absolute;
+			top: ($ms-gap/2);
+			right: ($ms-gap/2);
+			height: 18px;
+			width: 18px;
+			z-index: 1;
+
+			.btn-cog {
+				display: block;
+				height: 18px;
+				width: 18px;
+				min-width: 18px;
+				line-height: 18px;
+				margin: 0px;
+				padding: 0px;
+				border: none;
+				box-shadow: none;
+				background: transparent;
+			}
+
+			.icon {
+				font-size: 16px;
+				opacity: 0.2;
+
+				&:hover {
+					opacity: 0.5;
+				}
+			}
+		}
+
+		.site-box-status {
+			margin-bottom: 0;
+
+			.site-crawling {
+				display: block;
+				position: relative;
+				height: 135px;
+				font-size: 1.5rem;
+			}
+
+			.site-screenshot {
+				display: block;
+				border: 1px solid $color-block-bg;
+				height: 135px;
+				margin: 0 auto;
+
+				a, img {
+					display: block;
+					margin: 0 auto;
+					height: 100%;
+				}
+			}
+		}
+
+		.site-box-label {
+			margin-bottom: 0px;
+
+			& > a, & > span {
+				@include font-medium();
+				@include truncate();
+				display: block;
+				padding: $ms-gap 0 ($ms-gap/2) 0;
+				font-size: 1.5rem;
+			}
+		}
+
+		.site-box-score {
+			margin-bottom: 0px;
+
+			.progress-circle {
+				display: block;
+				margin: 0 auto;
+				height: 60px;
+				width: 60px;
+			}
+
+			.score-message {
+				position: absolute;
+				width: 100%;
+				left: 0;
+				bottom: ($ms-gap*2);
+			}
+		}
+
+
+		.site-box-blocker {
+			position: absolute;
+			z-index: 3;
+			top: 0px;
+			left: 0px;
+			height: 100%;
+			width: 100%;
+			background: rgba(0, 0, 0, 0.25);
+
+			.site-box-dialog {
+				width: 75%;
+				margin: 15px auto;
+				padding: 15px;
+				text-align: center;
+				background: #FFFFFF;
+				box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+			}
+		}
+	}
+}
+
+@include breakpoint-phone {
+	#sites-page .site-box {
+		float: none;
+		width: 275px;
+		height: 190px;
+		padding-top: $ms-gap;
+		padding-bottom: $ms-gap;
+		margin-left: auto;
+		margin-right: auto;
+
+		.site-box-status .site-screenshot {
+			display: none;
+		}
+
+		.site-box-status .site-crawling {
+			width: 100%;
+			height: 100px;
+		}
+
+		.site-box-label > span,
+		.site-box-label > a {
+			padding: 0 0 ($ms-gap/2) 0;
+		}
+	}
+}

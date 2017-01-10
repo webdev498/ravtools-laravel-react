@@ -1,0 +1,11 @@
+#upgrade-modal .modal-bg {
+	text-align: center;
+
+	h3 {
+		margin: ($ms-gap * 2) 0;
+	}
+
+	.btn-toolbar .btn {
+		float: none;
+	}
+}

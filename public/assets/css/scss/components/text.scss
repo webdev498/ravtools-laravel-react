@@ -1,0 +1,17 @@
+input.form-control {
+	box-shadow: none;
+	border: 1px solid $color-font-light;
+
+	@include placeholder {
+		color: lighten($color-font-light, 10%);
+	}
+}
+
+.input-group .input-group-btn .btn {
+	border-width: 0;
+}
+
+.input-group input.form-control:last-child {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}

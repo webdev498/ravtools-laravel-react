@@ -1,0 +1,41 @@
+.notification-dropdown ul.dropdown-menu li {
+	width: 225px;
+	border-top: 1px solid $color-block-bg;
+
+	&:first-child {
+		border-top: none;
+	}
+
+	&:hover {
+		background-color: $color-block-bg;
+	}
+}
+
+.notification-dropdown .notification-item {
+	position: relative;
+	font-size: 1.2rem;
+
+	a {
+		display: block;
+		color: $color-font-default;
+		padding: ($ms-gap/2) $ms-gap;
+	}
+
+	.notification-item-icon {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		height: 5px;
+		width: 5px;
+		border-radius: 5px;
+		background-color: $color-font-light;
+
+		&.unread {
+			background-color: $color-font-interact;
+		}
+	}
+
+	strong {
+		@include truncate();
+	}
+}

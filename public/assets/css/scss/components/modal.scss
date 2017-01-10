@@ -1,0 +1,81 @@
+.modal {
+	background-color: $color-body-bg;
+
+	.modal-content {
+		position: relative;
+		box-shadow: none;
+		border: none;
+
+		.modal-body {
+			padding-top: 0;
+			padding-bottom: 0;
+
+			& > * > .row, & > .row {
+				margin-bottom: 0;
+			}
+
+			& .row > .column {
+				padding-left: $ms-gap;
+				padding-right: 0;
+
+				&:first-child {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+
+	.modal-header,
+	.modal-footer {
+		border: none;
+	}
+
+	.modal-footer {
+		padding: 0 $ms-gap;
+	}
+
+	.modal-footer > .btn-toolbar {
+		text-align: center;
+		margin-left: 0px;
+
+		.btn {
+			float: none;
+			margin-left: ($ms-gap/2);
+			margin-right: 0;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+
+	.modal-close {
+		display: block;
+		position: absolute;
+		top: $ms-gap;
+		right: $ms-gap;
+		height: 30px;
+		width: 30px;
+		background: url('/assets/img/ravenicon/ravenicon-close.svg') transparent center center no-repeat;
+	}
+
+	.modal-title {
+		@include font-regular();
+		font-size: 25px;
+		line-height: 30px;
+		padding-bottom: $ms-gap;
+		border-bottom: 1px solid $color-font-default;
+	}
+
+	.modal-bg {
+		padding: $ms-gap;
+		background-color: $color-block-bg;
+	}
+}
+
+@include breakpoint-tablet() {
+	.modal .modal-content .modal-body .row .column {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

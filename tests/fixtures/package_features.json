@@ -1,0 +1,20 @@
+[
+	{
+		"id": "44acd06c-1ca2-431d-9572-cc98d75963e1",
+		"package_id": "7a8d3254-3523-471f-b70e-b845a29ff69b",
+		"feature_id": "64d1e121-0af7-4aef-bf8b-35e796b54907",
+		"quantity": 20
+	},
+	{
+		"id": "0d9d7c67-9d54-4994-a18f-6d529ceeaafe",
+		"package_id": "7a8d3254-3523-471f-b70e-b845a29ff69c",
+		"feature_id": "64d1e121-0af7-4aef-bf8b-35e796b54907",
+		"quantity": 10000
+	},
+	{
+		"id": "b2225e82-9d2e-4851-9f7c-5719629bfa1c",
+		"package_id": "7a8d3254-3523-471f-b70e-b845a29ff69d",
+		"feature_id": "64d1e121-0af7-4aef-bf8b-35e796b54907",
+		"quantity": 100000
+	}
+]

@@ -1,0 +1,14 @@
+[
+	{
+		"id": "7a8d3254-3523-471f-b70e-b845a29ff69b",
+		"account_id": "b4bf491c-afab-4795-b51c-ba0a0e92a109",
+		"url": "http://fakester.io/",
+		"crawl_interval": "weekly",
+		"max_urls": 10000,
+		"is_crawling": 0,
+		"last_completed_session": "97bf5c35-1aa7-4da7-a848-974e67bb4a7e",
+		"created_ts": 1456761571,
+		"complete_ts": 1456846971,
+		"scheduled_ts": 1456933371
+	}
+]

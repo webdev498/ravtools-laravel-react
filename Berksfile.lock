@@ -1,0 +1,88 @@
+DEPENDENCIES
+  raven-db
+    git: https://github.com/raventools/raven-db.git
+    revision: 4a690ad5627247d4c40981256a0d9325ac276303
+  raven-deploy
+    git: https://github.com/raventools/raven-deploy.git
+    revision: f21e7bfb0fe0465998082d32c41e19c2fc2474a2
+  raven-dev
+    git: https://github.com/raventools/raven-dev.git
+    revision: 5ee1d8ccbe4a493a02ddf348fa6acac234059428
+  raven-nodejs
+    git: https://github.com/raventools/raven-nodejs.git
+    revision: 8abbba05b2104455fed811c417e6427566c36db4
+  raven-php
+    git: https://github.com/raventools/raven-php.git
+    revision: 562cb4495fed3cfda40cdfcb1a110409e23802fa
+  raven-redis
+    git: https://github.com/raventools/raven-redis.git
+    revision: 02d6c8cb90fc357415c54df30419b53ce7e971b1
+  raven-supervisor
+    git: https://github.com/raventools/raven-supervisor.git
+    revision: 34f9006630edd49d3b749b1e68a98ec5e18d91d3
+  site_auditor_grid
+    git: git@github-site_auditor_grid:raventools/site_auditor_grid.git
+    revision: 70d3ce410e27f9307891033437e2e3aab1cf93d8
+    rel: site_auditor_grid
+  site_auditor_sync
+    git: git@github-site_auditor_sync:raventools/site_auditor_sync.git
+    revision: cb32fe33d78129821fee8e9ccfc79ec78b9cdf53
+    rel: site_auditor_sync
+  standalone_site_auditor
+    path: standalone_site_auditor
+  yum
+
+GRAPH
+  apache2 (3.2.2)
+  aws (3.3.2)
+    ohai (>= 2.1.0)
+  build-essential (3.2.0)
+    seven_zip (>= 0.0.0)
+  chef_handler (1.3.0)
+  ohai (3.0.1)
+  raven-db (0.1.1)
+    raven-deploy (>= 0.0.0)
+    raven-supervisor (>= 0.0.0)
+    yum-mysql-community (>= 0.0.0)
+  raven-deploy (0.1.2)
+    apache2 (>= 0.0.0)
+    aws (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    raven-dev (>= 0.0.0)
+    raven-php (>= 0.0.0)
+    s3_file (>= 0.0.0)
+    yum (>= 0.0.0)
+  raven-dev (0.1.0)
+    raven-php (>= 0.0.0)
+    raven-supervisor (>= 0.0.0)
+  raven-nodejs (0.1.0)
+    raven-deploy (>= 0.0.0)
+  raven-php (0.1.5)
+    raven-deploy (>= 0.0.0)
+  raven-redis (0.1.0)
+    raven-deploy (>= 0.0.0)
+  raven-supervisor (0.1.11)
+  s3_file (2.7.0)
+  seven_zip (2.0.0)
+    windows (>= 1.2.2)
+  site_auditor_grid (0.1.0)
+    raven-deploy (>= 0.0.0)
+    raven-dev (>= 0.0.0)
+    raven-nodejs (>= 0.0.0)
+    raven-php (>= 0.0.0)
+    raven-redis (>= 0.0.0)
+    raven-supervisor (>= 0.0.0)
+    yum (>= 0.0.0)
+  site_auditor_sync (0.1.0)
+    raven-deploy (>= 0.0.0)
+    raven-supervisor (>= 0.0.0)
+    yum (>= 0.0.0)
+  standalone_site_auditor (0.1.0)
+    raven-deploy (>= 0.0.0)
+    raven-nodejs (>= 0.0.0)
+    raven-php (>= 0.0.0)
+  windows (1.40.0)
+    chef_handler (>= 0.0.0)
+  yum (3.10.0)
+  yum-mysql-community (0.2.0)
+    yum (>= 3.2)

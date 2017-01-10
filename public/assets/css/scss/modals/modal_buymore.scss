@@ -1,0 +1,13 @@
+#buymore-modal {
+	h4 {
+		margin: $ms-gap 0;
+		font-size: 2.5rem;
+		color: $color-font-dark;
+	}
+
+	h4 > strong {
+		@include font-bold();
+		font-size: 3rem;
+		color: $color-font-interact;
+	}
+}

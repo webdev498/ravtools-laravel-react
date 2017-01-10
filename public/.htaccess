@@ -1,0 +1,36 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    RewriteCond /vagrant !-d
+    RewriteCond %{HTTP:X-Forwarded-Proto} ^http$
+    RewriteRule ^.*$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    #RewriteCond %{REQUEST_FILENAME} !-d
+    #RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Rewrite error to errors controller
+    # RewriteRule assets/error/lang/(.*)/(.*)\.js$ /errors/$2/$1 [L,R=301]
+    # RewriteRule assets/error/(.*)\.js$ /errors/$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(api|billing|errors) index.php [L]
+
+    # Admin area rewrites
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^admin /app_admin.html [L]
+
+    # old stuff
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond $1 !^(app\.html|api|images|js|styles|assets|billing|errors|admin)
+    RewriteRule ^(.*)$ /app.html/$1 [L]
+    RewriteRule ^$ /app.html [L]
+</IfModule>

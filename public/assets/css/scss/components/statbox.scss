@@ -1,0 +1,14 @@
+.stat-box {
+	margin-bottom: ($ms-gap / 2);
+
+	.stat-box-label {
+		padding-left: $ms-gap;
+		line-height: 24px;
+		font-weight: 400;
+	}
+
+	.stat-box-value {
+		text-align: right;
+		padding-left: $ms-gap;
+	}
+}

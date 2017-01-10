@@ -1,0 +1,17 @@
+a {
+	color: $color-font-interact;
+
+	&:not([href]) {
+		cursor: pointer;
+	}
+
+	&:hover {
+		color: hover($color-font-interact);
+		text-decoration: none;
+	}
+
+	&:active {
+		color: active($color-font-interact);
+		text-decoration: none;
+	}
+}

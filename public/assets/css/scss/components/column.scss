@@ -1,0 +1,11 @@
+#top .column,
+#main > .page > .column
+{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.column > .column {
+	padding-left: 0;
+	padding-right: 0;
+}

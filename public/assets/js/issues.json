@@ -1,0 +1,330 @@
+{
+	"visibility": {
+		"label": "Page Visibility",
+		"description": "Page Visibility",
+		"noun": "page",
+		"noun_plural": "pages",
+
+		"order": [
+			"errors",
+			"redirects",
+			"blocked_by_robots",
+			"malware"
+		],
+
+		"stats": {
+			"errors": {
+				"label": "Page Errors",
+				"predicate": "has page errors",
+				"predicate_plural": "have page errors",
+				"severity": 1,
+				"brief": "A page error (aka HTTP error) occurs when a visitor or search engine bot attempts to view a page on your site, but it’s not available.",
+				"description": "A page error (aka HTTP error) occurs when a visitor or search engine bot attempts to view a page on your site, but it’s not available. The most common error is a 404, which means the page was not found and is usually caused by deleting or moving a page. If you can find the page or find a page that is similar, the best practice is to create a 301 redirect to it so that customers aren’t led to a dead end. Check this section for any errors that you weren’t aware of, and fix them. If you’re satisfied with having 404s on your site, you can ignore this error.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=2409437&topic=2446029&ctx=topic"
+			},
+			"blocked_by_robots": {
+				"label": "Blocked by robots.txt",
+				"predicate": "was blocked by robots.txt",
+				"predicate_plural": "were blocked by robots.txt",
+				"severity": 1,
+				"brief": "The most common cause for webpages not being displayed in search engines like Google is a disallow rule on a file on your site called robots.txt.",
+				"description": "The most common cause for webpages not being displayed in search engines like Google is a disallow rule on a file on your site called robots.txt. If your site has one of these, it can be found by adding /robots.txt to your homepage URL. Search engines look for this document because it contains directions on what they should and shouldn’t include in their search results. If these results show blocked pages that you want to see in search results, update your robots.txt file to not exclude them. Alternatively, if the robots.txt contains pages that you want to continue blocking, you don’t need to make any changes. To improve your overall Site Score, however, you will want to add a path exclusion for those pages in the Settings.",
+				"info": "https://support.google.com/webmasters/answer/6062608?hl=en&rd=1"
+			},
+			"malware": {
+				"label": "Malware Detected",
+				"predicate": "has malware detected",
+				"predicate_plural": "have malware detected",
+				"severity": 1,
+				"brief": "Kinds of malware include (but are not limited to) viruses, worms, spyware and Trojan horses.",
+				"description": "Kinds of malware include (but are not limited to) viruses, worms, spyware and Trojan horses. Once a site or computer has been compromised, it can be used to host malicious content such as phishing sites (sites designed to trick users into parting with personal and credit card information).",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=163633"
+			},
+			"redirects": {
+				"label": "Redirects",
+				"predicate": "has redirects",
+				"predicate_plural": "have redirects",
+				"severity": 2,
+				"brief": "Redirects automatically send a visitor from an old page or site to a new page or site, like when content has moved or has been deleted, or when a site has been moved to a new domain.",
+				"description": "Redirects automatically send a visitor from an old page or site to a new page or site, like when content has moved or has been deleted, or when a site has been moved to a new domain. A redirect that’s commonly used by search engine optimizers (SEOs) is called a 301 or permanent redirect, but there are actually several types of redirects. Each type works similarly, but each one communicates a different reason to search engines as to why a page or site is being redirected. If the Site Auditor is reporting redirects, it’s important to review each one to make sure they are correct. If you are satisfied that your site is redirecting correctly, ignore this error.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=93633"
+			}
+		}
+	},
+
+	"meta": {
+		"label": "Meta Data",
+		"description": "Meta Data",
+		"noun": "page",
+		"noun_plural": "pages",
+
+		"order": [
+			"missing_title",
+			"duplicate_title",
+			"invalid_title",
+			"missing_description",
+			"duplicate_description",
+			"invalid_description",
+			"missing_google_analytics"
+		],
+
+		"stats": {
+			"missing_title": {
+				"label": "Missing a Page Title",
+				"predicate": "is missing a page title",
+				"predicate_plural": "are missing a page title",
+				"severity": 1,
+				"brief": "All pages need titles, especially when it comes to search results. Search engines, like Google, love titles. They care about the keywords you use in the title, and they like to use them in search results.",
+				"description": "All pages need titles, especially when it comes to search results. Search engines, like Google, love titles. They care about the keywords you use in the title, and they like to use them in search results. Otherwise the search engines make something up themselves, and this usually isn’t pretty. Search engines also value uniqueness, so don’t repeat yourself when you add titles to your pages.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35624"
+			},
+			"duplicate_title": {
+				"label": "Pages With Duplicate Page Titles",
+				"predicate": "has a duplicate page title",
+				"predicate_plural": "have a duplicate page title",
+				"severity": 2,
+				"brief": "While it's possible to have more than one page with the same title, search engines like Google prefer unique titles for each page.",
+				"description": "While it's possible to have more than one page with the same title, search engines like Google prefer unique titles for each page. It's a sign of quality and it helps them better understand and distinguish pages on your site. Writing unique titles for each of your pages can help your pages rank better in search results.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35624"
+			},
+			"invalid_title": {
+				"label": "Page Titles That Are Too Long or Too Short",
+				"predicate": "has a page title that is too short or too long",
+				"predicate_plural": "have a page title that is too short or too long",
+				"severity": 2,
+				"brief": "In life and in page titles, saying too little or too much can be a balance. Page titles are what potential visitors see in search results, and if you don’t say enough, people may skip your site and click on the next one.",
+				"description": "In life and in page titles, saying too little or too much can be a balance. Page titles are what potential visitors see in search results, and if you don’t say enough, people may skip your site and click on the next one. Alternatively, if you say too much, search engines will cut off your extraordinary prose, resulting in an incomplete description. Don’t let your page titles be too short or too long. Instead, make them just the perfect size to entice the largest amount of people, which is around 70 characters long.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35624"
+			},
+			"missing_description": {
+				"label": "Missing a META Description",
+				"predicate": "is missing a meta description",
+				"predicate_plural": "are missing a meta description",
+				"severity": 2,
+				"brief": "A meta description is a brief sentence or two that describes your page and potentially (hopefully!) gets shown in the search results to entice visitors to click to your site.",
+				"description": "A meta description is a brief sentence or two that describes your page and potentially (hopefully!) gets shown in the search results to entice visitors to click to your site. These descriptions aren’t visible via a browser but are hidden in the site’s HTML. When search engine bots visit your pages, they look for meta descriptions, and if the description is relevant to the page, the bots show it in the search results. Writing a compelling description for each page can help increase the number of people who visit your site from a search result.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35624"
+			},
+			"duplicate_description": {
+				"label": "Pages With Duplicate META Descriptions",
+				"predicate": "has a duplicate meta description",
+				"predicate_plural": "have a duplicate meta description",
+				"severity": 2,
+				"brief": "Search engines prefer when your website has unique meta descriptions for each page, and they may ignore pages with duplicates.",
+				"description": "Search engines like Google have a preference for pages that are unique from one another, including the main content and meta description for a page. When search engine bots encounter duplicate meta descriptions, it can sometimes be interpreted as a sign of low quality and trust. Make those descriptions as unique as possible, and use <a href=\"https://raven.zendesk.com/hc/en-us/articles/202026994-How-does-Site-Auditor-detect-duplicate-content-\">rel=’canonical’</a> tags where appropriate.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35624"
+			},
+			"invalid_description": {
+				"label": "META Descriptions That Are Too Long or Too Short",
+				"predicate": "has a meta description that is too short or too long",
+				"predicate_plural": "have a meta description that is too short or too long",
+				"severity": 2,
+				"brief": "Search results limit the number of characters they display for meta descriptions.",
+				"description": "Search results limit the number of characters they display for meta descriptions. It’s considered best practice to keep meta descriptions to a minimum of 50 characters and a maximum 156 characters.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35624"
+			},
+			"missing_google_analytics": {
+				"label": "Missing Google Analytics",
+				"predicate": "is missing Google Analytics",
+				"predicate_plural": "are missing Google Analytics",
+				"severity": 2,
+				"brief": "Google Analytics (GA) is a free way to collect insights about what visitors are doing on your site.",
+				"description": "Google Analytics (GA) is a free way to collect insights about what visitors are doing on your site. Here you’ll see the list of pages that don’t include a GA tracking code. That’s not good, because without the tracking code on those page, there’s no way of knowing if anyone is visiting them. The only thing worse than missing tracking code on pages is not using GA at all.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35624"
+			}
+		}
+	},
+
+	"content": {
+		"label": "Content",
+		"description": "Content",
+		"noun": "page",
+		"noun_plural": "pages",
+
+		"order": [
+			"low_word_count",
+			"duplicate_content"
+		],
+
+		"stats": {
+			"low_word_count": {
+				"label": "Low Word Count",
+				"predicate": "has a low word count",
+				"predicate_plural": "have a low word count",
+				"severity": 2,
+				"brief": "Sometimes it’s hard to write good content, and sometimes it’s hard to write anything at all.",
+				"description": "Sometimes it’s hard to write good content, and sometimes it’s hard to write anything at all. But if you want search engines like Google to comprehend and display your pages in search results, you have to provide them with enough content to know what your site is about. That typically means writing at least 250 words of unique content per page. Give these pages some writing love. Your visitors and the search engines will thank you."
+			},
+			"duplicate_content": {
+				"label": "Duplicate Content",
+				"predicate": "has duplicate content",
+				"predicate_plural": "have duplicate content",
+				"severity": 2,
+				"brief": "Duplicate content is confusing because your readers are hoping to see different information on each page of your site.",
+				"description": "Duplicate content is confusing because your readers are hoping to see different information on each page of your site. Duplicate content on multiple pages forces search engines to choose the best page to include in their search results. The problem with that is the other pages will be ignored by Google, and one of those pages may be the one you actually want in the search result. Make all of your content count, and if you have to have duplicate pages, use <a href=\"https://raven.zendesk.com/hc/en-us/articles/202026994-How-does-Site-Auditor-detect-duplicate-content-\">rel=’canonical’</a> tags to show which page is most important.",
+				"info": "https://support.google.com/webmasters/answer/66359?hl=en"
+			}
+		}
+	},
+
+	"links_internal": {
+		"label": "Links (Internal)",
+		"description": "Links (Internal)",
+		"noun": "internal link",
+		"noun_plural": "internal links",
+
+		"order": [
+			"broken",
+			"missing_anchor_or_alt",
+			"nofollow"
+		],
+
+		"stats": {
+			"broken": {
+				"label": "Broken Internal Links",
+				"predicate": "is broken",
+				"predicate_plural": "are broken",
+				"severity": 1,
+				"brief": "Whether we intend them to or not, broken internal links provide a poor user experience and don’t instill a lot of faith in your brand.",
+				"description": "Whether we intend them to or not, broken internal links provide a poor user experience and don’t instill a lot of faith in your brand. Too many 404s, and you may not only turn away visitors, you may also keep search engines from displaying your pages. That’s because they can interpret numerous broken internal links as a sign of a low-quality site.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=2409439"
+			},
+			"missing_anchor_or_alt": {
+				"label": "Internal Links Missing Anchor or ALT Text",
+				"predicate": "is missing anchor or ALT text",
+				"predicate_plural": "are missing anchor or ALT text",
+				"severity": 2,
+				"brief": "These are both cases where a link is invisible. An internal text link without anchor text means the user can’t see the link at all, even though it’s in your code.",
+				"description": "These are both cases where a link is invisible. An internal text link without anchor text means the user can’t see the link at all, even though it’s in your code. An internal link that uses an image for the user to click on but has no ALT text doesn’t tell search engines what that link imbedded in the image is about. To increase your site’s accessibility to both users and search engines, make sure that your links show context in anchor or ALT text.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=2409439"
+			},
+			"nofollow": {
+				"label": "Internal Links Using Nofollow",
+				"predicate": "uses rel=\"nofollow\"",
+				"predicate_plural": "use rel=\"nofollow\"",
+				"severity": 1,
+				"brief": "There are a lot of things sites should have on them, but internal nofollow links are not one of them. This is because using the nofollow link attribute is communicating that you don’t know if you trust a link.",
+				"description": "There are a lot of things sites should have on them, but internal nofollow links are not one of them. Using the nofollow link attribute communicates that you don't know if you trust a link, so using it on internal links will make Google suspicious. Make your site a suspicion-free zone by removing all of your internal nofollow links.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=2409439"
+			}
+		}
+	},
+
+	"links_external": {
+		"label": "Links (External)",
+		"description": "Links (External)",
+		"noun": "external link",
+		"noun_plural": "external links",
+
+		"order": [
+			"broken",
+			"missing_anchor_or_alt",
+			"nofollow"
+		],
+
+		"stats": {
+			"broken": {
+				"label": "Broken External Links",
+				"predicate": "is broken",
+				"predicate_plural": "are broken",
+				"severity": 2,
+				"brief": "Broken external links can result in poor search result performance as well as a bad user experience.",
+				"description": "You just recommended an amazing site to your visitors, but they just had a bad experience on your site because the link is broken. The site no longer exists, it’s currently down or they moved it without telling you! Search engines like Google aren’t fans of sites with lots of broken external links. These errors can send search engines the message that you’re running a low-quality site, and the search engines may rank you lower in search results.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=2409439"
+			},
+			"missing_anchor_or_alt": {
+				"label": "External Links Missing Anchor or ALT Text",
+				"predicate": "is missing anchor or ALT text",
+				"predicate_plural": "are missing anchor or ALT text",
+				"severity": 2,
+				"brief": "Either of these errors will render a link invisible. An external text link without anchor text means the link is invisible to the user.",
+				"description": "Either of these errors will render a link invisible. An external text link without anchor text means the link is invisible to the user. An external link that uses an image for the user to click on but has no ALT text doesn’t provide any context to search engines, who can’t see images like humans do. To increase your site’s accessibility to both users and search engines, make sure that your links show context in anchor or ALT text.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=2409439"
+			},
+			"nofollow": {
+				"label": "External Links Using Nofollow",
+				"predicate": "uses rel=\"nofollow\"",
+				"predicate_plural": "use rel=\"nofollow\"",
+				"severity": 3,
+				"brief": "Google created the nofollow link attribute as a way for people to practice safe linking.",
+				"description": "Google created the nofollow link attribute as a way for people to practice safe linking. You can use it when you're not sure if a link is high quality, like the links people post in your comments. Nofollow tells search engines \"I can't or don't want to vouch for this link,\" so there's no need to use it with sites you trust and hope to exchange link juice with.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=2409439"
+			}
+		}
+	},
+
+	"images": {
+		"label": "Images",
+		"description": "Images",
+		"noun": "image",
+		"noun_plural": "images",
+
+		"order": [
+			"broken",
+			"missing_alt",
+			"missing_title"
+		],
+
+		"stats": {
+			"broken": {
+				"label": "Broken Images",
+				"predicate": "is broken",
+				"predicate_plural": "are broken",
+				"severity": 1,
+				"brief": "Broken images make pages ugly, and neither search engines nor humans like to link to ugly pages.",
+				"description": "Broken images make pages ugly, and neither search engines nor humans like to link to ugly pages. Broken images also reduce the chance of getting traffic from image searches. Too many broken images on your site may even communicate a message of low quality to search engines like Google. Fix your broken images by either finding replacements or completely removing the image code."
+			},
+			"missing_alt": {
+				"label": "Missing ALT text",
+				"predicate": "is missing ALT text",
+				"predicate_plural": "are missing ALT text",
+				"severity": 2,
+				"brief": "ALT text for images started out as an accessibility attribute. For example, if someone is using a text browser or a browser for the visually impaired, the ALT text can tell them what the image is about.",
+				"description": "ALT text for images started out as an accessibility attribute. For example, if someone is using a text browser or a browser for the visually impaired, the ALT text can tell them what the image is about. Because search engine bots don’t see images, either, they learned that HTML accessibility attributes could be useful to them too. Include ALT text for your images to ensure that all users, human and bot, can understand the images on your site.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=114016"
+			},
+			"missing_title": {
+				"label": "Missing Title Text",
+				"predicate": "is missing title text",
+				"predicate_plural": "are missing title text",
+				"severity": 3,
+				"brief": "The title text for images started out as an accessibility attribute. For example, if someone is using a text browser or a browser for the visually impaired, the title text could provide a description of the image.",
+				"description": "The title text for images started out as an accessibility attribute. For example, if someone is using a text browser or a browser for the visually impaired, the title text could provide a description of the image. Because search engines can’t see images like humans might, bots soon learned that HTML accessibility attributes could be useful to them, too. Title text on images help explain image content to those who can’t see the images. Include them so the power of your images isn’t lost on any of your users.",
+				"info": "http://support.google.com/webmasters/bin/answer.py?hl=en&answer=114016"
+			}
+		}
+	},
+
+	"semantics": {
+		"label": "Semantics",
+		"description": "Semantics",
+		"noun": "page",
+		"noun_plural": "pages",
+
+		"order": [
+			"missing_headers",
+			"missing_schema_microdata"
+		],
+
+		"stats": {
+			"missing_headers": {
+				"label": "Missing Headers",
+				"predicate": "is missing headers",
+				"predicate_plural": "are missing headers",
+				"severity": 3,
+				"brief": "Headings help provide structure and comprehension for page content for both humans and search engine bots.",
+				"description": "Headings help provide structure and comprehension for page content for both humans and search engine bots. They break up your content and show users how your ideas are organized. It’s best practice to use them on your pages, starting with the h1 heading attribute and then maintaining the hierarchical structure with sub-headings like h2 and h3.",
+				"info": "http://googlewebmastercentral.blogspot.com/2012/07/on-web-semantics.html"
+			},
+			"missing_schema_microdata": {
+				"label": "Missing Schema.org Microdata",
+				"predicate": "is missing Schema.org microdata",
+				"predicate_plural": "are missing Schema.org microdata",
+				"severity": 3,
+				"brief": "Search bots are smart, but they aren’t that smart. That’s why Google created the Schema.org structured data vocabulary.",
+				"description": "Search bots are smart, but they aren’t that smart. That’s why Google created the Schema.org structured data vocabulary. These pieces of code on your site help search engine bots better understand what kind of content you’ve included on your pages. As an added bonus, Google will sometime use the structured data on your pages to display enhanced search results called rich snippets. Rich snippets not only make the search results for your page look better, they can also increase the number of people who click to visit your site.",
+				"info": "http://schema-creator.org/"
+			}
+		}
+	}
+}

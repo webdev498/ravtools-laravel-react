@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Analyze and Fix Your Sites with Site Auditor by Raven</title>
+		<meta name="description" content="Discover the unique issues keeping your website from attracting more customers, then learn in plain English how to fix it."/>
+
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Analyze and Fix Your Sites with Site Auditor by Raven" />
+		<meta property="og:description" content="Discover the unique issues keeping your website from attracting more customers, then learn in plain English how to fix it." />
+		<meta property="og:image" content="https://raventools.com/site-auditor/img/screens.png" />
+		<meta property="og:url" content="https://raventools.com/site-auditor/" />
+		<meta property="og:site_name" content="Site Auditor by Raven" />
+
+		<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/icons/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/icons/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/icons/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/icons/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/icons/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-touch-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon-180x180.png" />
+		<link rel="icon" type="image/png" href="/assets/img/icons/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="/assets/img/icons/android-chrome-192x192.png" sizes="192x192" />
+		<link rel="icon" type="image/png" href="/assets/img/icons/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="/assets/img/icons/favicon-16x16.png" sizes="16x16" />
+		<link rel="manifest" href="/assets/img/icons/manifest.json" />
+		<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="msapplication-TileImage" content="/assets/img/icons/mstile-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap.min.css" />
+		<link rel="stylesheet" href="/assets/css/app.css" />
+
+		<!-- FullStory Recording Snippet -->
+		<script>
+			window['_fs_debug'] = false;
+			window['_fs_host'] = 'www.fullstory.com';
+			window['_fs_org'] = '1LX4';
+			(function(m,n,e,t,l,o,g,y){
+				g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+				o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+				y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+				g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){FS(l,v)};
+				g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;FS(o,v)};
+				g.clearUserCookie=function(d,i){d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+						';path=/;expires='+new Date(0);i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}
+			})(window,document,'FS','script','user');
+		</script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-88442-73', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+
+		</script>
+	</head>
+	<body>
+
+		<noscript>
+			<div class="alert alert-danger text-center">
+				<h3>We noticed that your browser does not have JavaScript support enabled.</h3>
+				<h4>Raven Site Auditor <strong>requires</strong> JavaScript support.</h4>
+				<p>Please enable JavaScript in your browser settings and reload this page.</p>
+			</div>
+		</noscript>
+
+		<div id="app-container" class="container-fluid"><!-- App --></div>
+
+		<script type="text/javascript" src="/assets/vendor/requirejs-bower/require.js"></script>
+		<script type="text/javascript" src="/assets/js/global.js"></script>
+		<script type="text/javascript" src="/assets/js/router.js"></script>
+		<script src="https://checkout.stripe.com/checkout.js"></script>
+	</body>
+</html>

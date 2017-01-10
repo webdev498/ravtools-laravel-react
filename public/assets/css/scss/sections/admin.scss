@@ -1,0 +1,15 @@
+#app.layout-admin {
+	#admin-login-form {
+		text-align: center;
+	}
+
+	section > h1, section > h2, section > h3, section > h4, section > h5 {
+		margin-top: 0;
+	}
+
+	section > .row > .column {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+

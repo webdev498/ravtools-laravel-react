@@ -1,0 +1,32 @@
+$ms-breadcrumb-height: $ms-gap * 2.5;
+
+.page-breadcrumb {
+	height: $ms-breadcrumb-height;
+
+	a {
+		@include font-light();
+		display: block;
+		height: $ms-breadcrumb-height;
+		line-height: $ms-breadcrumb-height + 2px;
+		padding: 0 $ms-gap;
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		color: $color-font-top;
+		background: $color-font-dark;
+
+		.icon {
+			font-size: 1.5rem;
+			vertical-align: text-bottom;
+			margin-right: 5px;
+		}
+
+		&:hover {
+			background-color: hover($color-font-dark);
+		}
+
+		&:active {
+			background-color: active($color-font-dark);
+		}
+	}
+}

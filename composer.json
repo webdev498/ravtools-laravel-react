@@ -1,0 +1,107 @@
+{
+	"name": "raventools/site_auditor_standalone",
+	"description": "Site Auditor Standalone",
+	"keywords": [],
+	"license": "MIT",
+	"type": "project",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "git@github-site_auditor_data:raventools/site_auditor_data.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github-site_auditor_sync:raventools/site_auditor_sync.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github-site_auditor_grid:raventools/site_auditor_grid.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github-gridmanager:raventools/GridManager.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@github-alerts:raventools/alerts.git"
+		}
+	],
+	"require": {
+		"php": ">=5.5.9",
+		"laravel/lumen-framework": "5.2.1",
+		"vlucas/phpdotenv": "2.2.0",
+		"doctrine/inflector": "1.1.0",
+		"doctrine/instantiator": "1.0.5",
+		"illuminate/auth": "5.2.7",
+		"illuminate/broadcasting": "5.2.7",
+		"illuminate/bus": "5.2.7",
+		"illuminate/cache": "5.2.7",
+		"illuminate/config": "5.2.7",
+		"illuminate/console": "5.2.7",
+		"illuminate/container": "5.2.7",
+		"illuminate/contracts": "5.2.7",
+		"illuminate/database": "5.2.7",
+		"illuminate/encryption": "5.2.7",
+		"illuminate/events": "5.2.7",
+		"illuminate/filesystem": "5.2.7",
+		"illuminate/hashing": "5.2.7",
+		"illuminate/http": "5.2.7",
+		"illuminate/pagination": "5.2.7",
+		"illuminate/pipeline": "5.2.7",
+		"illuminate/queue": "5.2.7",
+		"illuminate/session": "5.2.7",
+		"illuminate/support": "5.2.7",
+		"illuminate/translation": "5.2.7",
+		"illuminate/validation": "5.2.7",
+		"illuminate/view": "5.2.7",
+		"monolog/monolog": "1.17.2",
+		"mtdowling/cron-expression": "1.0.4",
+		"nesbot/carbon": "1.21.0",
+		"nikic/fast-route": "0.7.0",
+		"paragonie/random_compat": "1.1.5",
+		"phpdocumentor/reflection-docblock": "2.0.4",
+		"phpspec/prophecy": "1.5.0",
+		"psr/log": "1.0.0",
+		"sebastian/comparator": "1.2.0",
+		"sebastian/diff": "1.4.1",
+		"sebastian/environment": "1.3.3",
+		"sebastian/exporter": "1.2.1",
+		"sebastian/global-state": "1.1.1",
+		"sebastian/recursion-context": "1.0.2",
+		"sebastian/version": "1.0.6",
+		"symfony/console": "3.0.1",
+		"symfony/debug": "3.0.1",
+		"symfony/event-dispatcher": "3.0.1",
+		"symfony/finder": "3.0.1",
+		"symfony/http-foundation": "3.0.1",
+		"symfony/http-kernel": "3.0.1",
+		"symfony/polyfill-mbstring": "1.0.1",
+		"symfony/process": "3.0.1",
+		"symfony/translation": "3.0.1",
+		"symfony/yaml": "3.0.1",
+		"raventools/site_auditor_data": ">=v0.2.28",
+		"raventools/site_auditor_grid": ">=0.1.4",
+		"raventools/site_auditor_sync": ">=v0.1.9",
+		"raventools/alerts": ">=v0.0.7",
+		"hassankhan/config": "^0.10.0",
+		"lcobucci/jwt": "^3.1",
+		"cartalyst/stripe-laravel": "4.0.*",
+		"ruflin/elastica": "^3.2"
+	},
+	"require-dev": {
+		"fzaninotto/faker": "1.5.0",
+		"phpunit/phpunit": "4.8.21"
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "app/",
+			"Errors\\": "includes/errors/"
+		}
+	},
+	"autoload-dev": {
+		"classmap": [
+			"tests/",
+			"database/"
+		]
+	}
+}

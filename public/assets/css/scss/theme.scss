@@ -1,0 +1,104 @@
+/* Measurements */
+$ms-gap: 15px;
+$ms-button-width: 115px;
+$ms-top-height: 50px;
+$ms-bottom-height: 100px;
+$ms-pagetitle-height: 34px;
+$ms-border-radius: 3px;
+
+/* Fonts */
+$font-body: 'Roboto', sans-serif;
+$font-size: 62.5%; /* approx. 10px */
+
+@mixin font-light() {
+	font-family: $font-body;
+	font-weight: 300;
+}
+
+@mixin font-regular() {
+	font-family: $font-body;
+	font-weight: 400;
+}
+
+@mixin font-medium() {
+	font-family: $font-body;
+	font-weight: 500;
+}
+
+@mixin font-bold() {
+	font-family: $font-body;
+	font-weight: 700;
+}
+
+@mixin font-italic() {
+	font-family: $font-body;
+	font-weight: 400;
+	font-style: italic;
+}
+
+/* Colors */
+$color-top-bg: #393939;
+$color-bottom-bg: #B3B5B5;
+$color-body-bg: #FFFFFF;
+$color-block-bg: #F2F2F2;
+
+$color-font-default: #000000;
+$color-font-light: #B6B6B6;
+$color-font-dark: #757575;
+$color-font-interact: #03A9F4;
+$color-font-top: #FFFFFF;
+
+$color-button-default: #000000;
+$color-button-default-bg: #FFFFFF;
+$color-button-primary: #FFFFFF;
+$color-button-primary-bg: $color-font-interact;
+$color-button-danger: #FFFFFF;
+$color-button-danger-bg: #E41A46;
+
+$color-blue: $color-font-interact;
+$color-green: #8cc63f;
+$color-red: #bf0930;
+$color-orange: #ff5b07;
+$color-yellow: #f9b300;
+$color-gray: #999999;
+
+/* Images */
+$image-body-bg: url('/assets/img/body-design.png');
+
+/* Mixins & Functions */
+@mixin placeholder {
+	$placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+	@each $placeholder in $placeholders {
+		&:#{$placeholder}-placeholder {
+			@content;
+		}
+	}
+}
+
+@mixin breakpoint-phone {
+	@media only screen and (max-width: 479px) {
+		@content;
+	}
+}
+
+@mixin breakpoint-tablet {
+	@media only screen and (max-width: 991px) {
+		@content;
+	}
+}
+
+@mixin truncate($width: 100%) {
+	display: block;
+	width: $width;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@function hover($color) {
+	@return darken($color, 5%);
+}
+
+@function active($color) {
+	@return darken($color, 10%);
+}

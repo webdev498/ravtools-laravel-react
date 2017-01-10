@@ -1,0 +1,9 @@
+{
+	"raven_deploy": {
+		"aws_key": "YOURAWSACCESSKEYID",
+		"aws_secret": "YOUR/AWS/SECRET/KEY"
+	},
+	"site_auditor_sync": {
+		"developer_shortname": "your-name"
+	}
+}

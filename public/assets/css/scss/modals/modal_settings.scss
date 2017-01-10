@@ -1,0 +1,44 @@
+#settings-modal {
+	.column > .row {
+		padding: $ms-gap;
+	}
+
+	.list-group {
+		margin-top: $ms-gap;
+		margin-bottom: $ms-gap;
+	}
+
+	.list-group li {
+		vertical-align: bottom;
+	}
+
+	.input-group-btn {
+		width: 34px + 5px;
+		text-align: right;
+	}
+
+	.btn.btn-primary.btn-circle {
+		font-size: 3.0rem;
+		width: 30px;
+		min-width: 30px;
+		height: 30px;
+		border-radius: 30px;
+		padding: 0;
+		color: $color-font-interact;
+		background-color: #FFFFFF;
+		box-shadow: none;
+	}
+
+	.btn.btn-circle.btn-delete {
+		float: right;
+		font-size: 1.5rem;
+		width: 15px;
+		min-width: 15px;
+		height: 15px;
+		line-height: 15px;
+		padding: 0;
+		color: $color-font-interact;
+		background: none;
+		box-shadow: none;
+	}
+}

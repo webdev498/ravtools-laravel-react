@@ -1,0 +1,119 @@
+#top {
+	position: relative;
+	height: 50px;
+	width: 100%;
+
+	.column {
+		padding-right: 0;
+	}
+}
+
+#top nav {
+	height: $ms-top-height;
+	min-height: $ms-top-height;
+	margin-bottom: 0;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: $color-top-bg;
+	border: none;
+	border-radius: 0;
+
+	.topbar-left {
+		float: left;
+		height: $ms-top-height;
+
+		img {
+			display: inline;
+			height: 35px;
+		}
+
+		a {
+			display: block;
+			float: left;
+			text-transform: uppercase;
+			color: $color-font-top;
+			padding: 0 $ms-gap;
+			line-height: 50px;
+			font-size: 1rem;
+			letter-spacing: 1.25px;
+			font-weight: 500;
+			opacity: 1.0;
+
+			.divider {
+				display: inline-block;
+				width: 1px;
+				background-color: $color-font-top;
+				height: 14px;
+				margin: 0 10px;
+				vertical-align: text-bottom;
+			}
+
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+
+	.topbar-right {
+		float: right;
+		height: $ms-top-height;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			a {
+				display: block;
+			}
+		}
+	}
+
+	.desktop {
+		display: block;
+	}
+
+	.mobile {
+		display: none;
+
+		.icon {
+			font-size: 2rem;
+			line-height: $ms-top-height;
+		}
+	}
+}
+
+#top .account-dropdown, #top .notification-dropdown {
+	.dropdown-toggle {
+		color: $color-font-top;
+		padding: 0px $ms-gap;
+		height: $ms-top-height;
+		line-height: $ms-top-height;
+
+		&:hover {
+			color: darken($color-font-top, 10%);
+		}
+	}
+
+	&.open .dropdown-toggle {
+		background-color: darken($color-top-bg, 10%);
+	}
+
+	.account-label img {
+		height: 35px;
+		width: 35px;
+		border-radius: 35px;
+		margin-top: -1px;
+		margin-right: 10px;
+	}
+}
+
+@include breakpoint-phone {
+	#top nav .desktop {
+		display: none;
+	}
+
+	#top nav .mobile {
+		display: block;
+	}
+}

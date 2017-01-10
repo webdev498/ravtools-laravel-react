@@ -1,0 +1,131 @@
+.table-loader.hide,
+.table-wrapper.hide {
+	display: none;
+}
+
+.table-loader {
+	height: 75px;
+}
+
+.table-controls {
+	&.footer {
+		margin-bottom: 0;
+	}
+
+	& > .column {
+		padding: 0;
+	}
+
+	.table-search.input-group .form-group {
+		min-height: 34px;
+		margin-bottom: 0px;
+
+		.help-block {
+			display: none;
+		}
+	}
+
+	.table-search .input-group-addon {
+		color: $color-font-top;
+		border-color: $color-font-interact;
+		background-color: $color-font-interact;
+	}
+
+	.table-actions {
+		text-align: right;
+
+		.table-length {
+			@include font-bold();
+			font-size: 0.9em;
+
+			.form-group {
+				display: inline-block;
+				margin-bottom: 0;
+			}
+
+			.form-group label {
+				display: none;
+			}
+
+			.form-group select {
+				border: 1px solid $color-font-default;
+				box-shadow: none;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				text-indent: 1px;
+				text-overflow: '';
+			}
+		}
+
+		.table-paging {
+			margin-left: $ms-gap;
+
+			a {
+				font-size: 0.9em;
+				color: $color-font-default;
+
+				&.disabled {
+					opacity: 0.25;
+				}
+			}
+		}
+
+		.table-paging .table-info {
+			@include font-bold();
+			display: inline-block;
+			font-size: 0.9em;
+			text-align: center;
+			vertical-align: middle;
+			width: 80px;
+		}
+
+		.table-export {
+			margin-left: $ms-gap;
+		}
+	}
+}
+
+.dataTables_wrapper {
+	.column {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	table.dataTable {
+		border-left: 0;
+		border-right: 0;
+	}
+
+	table.dataTable thead th {
+		color: $color-font-top;
+		background-color: darken($color-block-bg, 50%);
+	}
+
+	table.dataTable thead th.sorting_asc::after,
+	table.dataTable thead th.sorting_desc::after {
+		opacity: 1.0;
+	}
+}
+
+@include breakpoint-phone() {
+	.table-controls.header .table-export {
+		display: none;
+	}
+
+	.table-controls.footer .table-export {
+		display: block;
+		margin-top: $ms-gap;
+		margin-left: 0px;
+
+		.dropdown {
+			display: block;
+
+			.dropdown-toggle {
+				float: none;
+				width: 100%;
+				min-width: 100%;
+			}
+		}
+	}
+}
+

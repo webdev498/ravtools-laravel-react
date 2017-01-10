@@ -1,0 +1,58 @@
+{
+	"name": "standalone",
+	"description": "",
+	"json_class": "Chef::Role",
+	"default_attributes": {
+		"app": {
+			"version": "5.5"
+		},
+		"vagrant_bootstrap":{
+			"hosts_entries":[]
+		},
+		"tmp_dir":"/vagrant/cache",
+		"standalone":{
+			"rightscale":{
+				"account_id": "6950",
+				"username": "system@sitening.com",
+				"password": "BAPokeX9V4yQHT"
+			},
+			"vhost":{
+					"name":"standalone",
+					"servername":"standalone.site",
+					"serveraliases":["www.standalone.site"],
+					"documentroot":"/home/webapps/standalone/public",
+					"port":80
+			}
+		},
+		"app_frontend":{
+			"raven_app":{
+				"app_root":"/home/webapps/raven"
+			}
+		},
+		"app_backend":{
+			"fakester":{
+				"repo":"git@github.com:raventools/fakester.git",
+				"branch":"master"
+			}
+		}
+	},
+	"override_attributes": {
+        "app_frontend":{
+            "attachment_dir":"/vagrant/cache/chefattachments",
+            "s3_access":"AKIAJX3OHRUW6P4TMYYA",
+            "s3_secret":"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"
+		}
+	},
+	"chef_type": "role",
+	"run_list": [
+		"standalone::default",
+		"app_frontend::default",
+		"app_frontend::chef_registry",
+		"app_frontend::php_extensions",
+		"app_frontend::nodejs",
+		"vagrant_bootstrap::default",
+		"standalone::vagrant"
+	],
+	"env_run_lists": {
+	}
+}

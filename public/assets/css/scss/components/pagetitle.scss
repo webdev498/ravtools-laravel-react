@@ -1,0 +1,59 @@
+.page-title {
+	overflow: hidden;
+	margin-top: $ms-gap;
+
+	h1 {
+		@include font-light();
+		display: block;
+		margin: 0;
+		height: $ms-pagetitle-height;
+		line-height: $ms-pagetitle-height;
+		font-size: 3.5rem;
+	}
+
+	.note {
+		display: inline-block;
+		@include font-light();
+		color: $color-font-dark;
+		font-size: 1.1rem;
+		margin-right: $ms-gap;
+		height: $ms-pagetitle-height;
+		line-height: $ms-pagetitle-height;
+	}
+
+	.float-right > * {
+		margin-left: ($ms-gap/3);
+	}
+
+	.btn-toolbar {
+		float: right;
+		overflow: hidden;
+	}
+}
+
+@include breakpoint-tablet {
+	.page-title h1 {
+		text-align: left;
+	}
+
+	.page-title > .row > .column {
+		display: block;
+		width: auto;
+		float: none;
+		margin-bottom: $ms-gap;
+	}
+
+	.page-title .float-right {
+		float: none;
+	}
+
+	.page-title .float-right > * {
+		margin-left: 0;
+	}
+}
+
+@include breakpoint-phone {
+	.page-title h1 {
+		text-align: center;
+	}
+}
